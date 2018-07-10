@@ -356,7 +356,7 @@ function sortBoxes(arr) {
         arrLength--;
         //after 1 iteration big number will be in the end off the array and i dont want to pass arr.length
         for (let i = 0; i < arrLength; i++) {
-            if (arr[i].width > arr[i + 1].width) {
+            if (parseInt(arr[i].width) > parseInt(arr[i + 1].width)) {
                 let temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
